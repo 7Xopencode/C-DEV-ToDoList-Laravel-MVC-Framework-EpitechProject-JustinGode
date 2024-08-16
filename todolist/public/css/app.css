@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2,h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Style pour les étiquettes */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style pour les champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Pour inclure le padding et border dans la largeur totale */
+    font-size: 14px;
+}
+
+/* Style pour le bouton de soumission */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style pour la section des erreurs */
+.error-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Style pour le conteneur principal */
+.container {
+    margin-top: 50px;
+}
+
+/* Styles pour la page de profil */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar img {
+    width: 100px; /* Ajustez la taille de l'image selon vos besoins */
+    height: 100px;
+    border-radius: 50%; /* Pour arrondir l'image */
+    object-fit: cover; /* Assure que l'image conserve ses proportions */
+    margin-right: 20px;
+}
+
+.user-details {
+    flex: 1; /* Pour occuper l'espace restant */
+}
+
+.user-details p {
+    margin-bottom: 10px;
+}
+
+.edit-profile-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff; /* Couleur de lien */
+}
+
+.edit-profile-link:hover {
+    text-decoration: underline; /* Souligner le lien au survol */
+}
